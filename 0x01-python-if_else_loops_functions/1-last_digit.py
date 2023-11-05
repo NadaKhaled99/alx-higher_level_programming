@@ -9,4 +9,4 @@ if modules > 5:
 elif digit < 5:
     print("less than 6 and not 0")
 else:
-    print("is 0")
+    print("0")
