@@ -1,3 +1,5 @@
 #!/usr/bin/python3
-class LockedClass():
-    __slots__ = ("first_name")
+"""Locked Class"""
+class LockedClass:
+    """class with one attribute"""
+    __slots__ = ("first_name",)
