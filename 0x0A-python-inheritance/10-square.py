@@ -1,14 +1,16 @@
- #!/usr/bin/python3
-"""Defines a Rectangle Square"""
+#!/usr/bin/python3
 Rectangle = __import__('9-rectangle').Rectangle
-
 class Square(Rectangle):
-    """Represent square"""
+    """Square class BaseGeometry"""
+
     def __init__(self, size):
-        """Initialize square
-        Args:
-           size: size of the new square.
-        """
-        self.integer_validator("size", size)
+        """initialized the attrubutes"""
+
         super().__init__(size, size)
+        self.integer_validator("size", size)
         self.__size = size
+
+    def area(self):
+        """rectangle area"""
+
+        return self.__size ** 2
