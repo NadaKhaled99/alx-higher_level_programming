@@ -1,21 +1,15 @@
 #!/usr/bin/python3
+"""
+10-rectangle.py
+"""
 Rectangle = __import__('9-rectangle').Rectangle
-"""
-module with class BaseGeometry
-"""
 
 
 class Square(Rectangle):
-    """inherits from Rectangle that inherits BaseGeometry"""
-
+    """calculate size with integer validator"""
     def __init__(self, size):
-        """initialized the attrubutes"""
-
-        super().__init__(size, size)
-        self.integer_validator("size", size)
+        """validar is  un integer for area"""
         self.__size = size
-
-    def area(self):
-        """for rectangle area"""
-
-        return self.__size ** 2
+        self.integer_validator("size", size)
+        super().__init__(size, size)
+        """super the clase"""
