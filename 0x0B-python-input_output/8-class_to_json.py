@@ -1,9 +1,13 @@
 #!/usr/bin/python3
-"""Defines a JSON file-reading fn"""
-import json
+"""Defines a class_to_json fn"""
 
 
-def load_from_json_file(filename):
-    """Create a Python object from a JSON file"""
-    with open(filename) as f:
-        return json.load(f)
+def class_to_json(obj):
+    """get the dictionary description of an object
+
+    Args:
+        obj:object to retrieve the dictionary from
+    Returns:
+        dictionary description
+    """
+    return obj.__dict__
