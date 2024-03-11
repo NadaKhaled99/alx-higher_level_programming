@@ -1,5 +1,5 @@
 #!/usr/bin/node
-//prnts a square of a specified size
+//prints a square of a specified size
 
 const args = process.argv;
 const size = parseInt(args[2], 10);
