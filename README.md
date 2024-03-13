@@ -1,1 +1,1 @@
-# This is a Python file
+# 0x13. JavaScript - Objects, Scopes and Closures
