@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 # Lists states from the database
-mport sys
+import sys
 import MySQLdb
 
 if __name__ == '__main__':
